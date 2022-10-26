@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}<title>Local library</title>{% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<center>
+    <form name="form1" method="post">
+        <table width="300" id="enfasis-columna">
+            <caption>
+                <h1>Inicio</h1>
+            </caption>
+            <tr>
+                <td>Bienvenidos a la Informacion de las peliculas</td>
+            </tr>
+            <br>
+            <tr>
+                <td>El sitio tiene los siguientes registros:</td>
+            </tr>
+            <br/>
+        <tr>
+            <td><br> <strong>Numeros de Peliculas: </strong>{{ num_pelicula }}</td>
+        </tr>
+            <tr>
+            <td><strong>Numeros de Director: </strong>{{ num_director }}</td>
+            </tr>
+            <tr>
+                <td><strong>Numeros de Generos: </strong>{{ num_genero }}</td>
+            </tr>
+
+        </table>
+    </form>
+</center>
+</body>
+</html>
